@@ -1072,6 +1072,13 @@ input::-webkit-input-placeholder {
 .ck-info .iconfont{
 	font-size: 22px!important;
 }
+.count-info {
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.count-info:hover{
+	color: #2EA5E2;
+}
 .help-tip{
 	position: absolute;
 	left: -248px;
