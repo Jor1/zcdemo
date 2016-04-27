@@ -10,72 +10,26 @@
 		<link rel="stylesheet" href="css/demo.css">
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
 	</head>
-	<body class="p-20 bg-f0">
-		<h3>普通圆角盒子</h3>
-		<div class="cont-box m-b-30">
-			<div class="cont-tl p-l-20 p-r-20">
-				<span class="cont-tl-sp">标题</span>
-			</div>
-			<div class="p-20">
-				<p class="m-b-0">内容</p>
-			</div>
+	<body class="p-30 bg-f0">
+		<div class="commit_box_step p-30 tac">
+			<ul class="di-block o-hidden">
+				<li class="complete">
+					<span class="spanc span-name"><i class="icon iconfont font-check"></i></span>上传安装包
+				</li>
+				<li class="complete">
+                    <span class="span_line"></span>
+                    <span class="spanc span-name"><i class="icon iconfont font-check"></i></span>补充应用信息
+                </li>
+                <li class="complete">
+                    <span class="span_line"></span>
+                    <span class="span1 span-name">3</span>确认联系方式
+                </li>
+                <li class="float not-complete">
+                    <span class="span_lineccc"></span>
+                    <span class="span2 span-name">4</span>提测完成
+                </li>
+			</ul>
 		</div>
-		<h3>右侧带链接的圆角盒子</h3>
-		<div class="cont-box m-b-30">
-			<div class="cont-tl p-l-20 p-r-20">
-				<span class="cont-tl-sp">标题
-					<a class="pull-right cont-tl-lk">返回</a>
-				</span>
-			</div>
-			<div class="p-20">
-				<p class="m-b-0">内容</p>
-			</div>
-		</div>
-		<h3>右侧有其他内容的圆角盒子</h3>
-		<div class="cont-box m-b-30">
-			<div class="cont-tl p-l-20 p-r-20">
-				<span class="cont-tl-sp">标题
-					<span class="pull-right right-special">
-						<span class="m-r-25 "><i class="icon iconfont">&#xe6cb;</i>总收入：<span class="fs4">4498元</span></span>
-						<span class="m-l-25 m-r-20"><i class="icon iconfont">&#xe770;</i>如何计算？</span>
-					</span>
-				</span>
-			</div>
-			<div class="p-20">
-				<p class="m-b-0">内容</p>
-			</div>
-		</div>
-		<h3>标题可切换的圆角盒子</h3>
-		<div class="cont-box m-b-10">
-			<div class="cont-tl p-l-20 p-r-20">
-				<ul class="tabs-tl ac70 clearfix ">
-			        <li class="active"><a href="javascript:;">未处理</a></li>
-			        <li><a href="javascript:;">已处理</a></li>
-			        <li><a href="javascript:;">全部</a></li>
-			    </ul>
-			</div>
-			<div class="p-20">
-				<p class="m-b-0">标题的宽度被固定为70px</p>
-			</div>
-		</div>
-		<div class="cont-box m-b-30">
-			<div class="cont-tl p-l-20 p-r-20">
-				<ul class="tabs-tl clearfix ">
-			        <li class="active"><a href="javascript:;">应用编辑</a></li>
-			        <li><a href="javascript:;">应用合并</a></li>
-			    </ul>
-			</div>
-			<div class="p-20">
-				<p class="m-b-0">标题的宽度为自适应，增加padding调整实际宽度(100px)</p>
-			</div>
-		</div>
-		<h3>无标题圆角盒子</h3>
-		<div class="cont-box m-b-30">
-			<div class="p-20">
-				<p class="m-b-0">内容</p>
-			</div>
-		</div>
-		<h3>水平排列的表单</h3>
 		<div class="cont-box m-b-30">
 			<div class="cont-tl p-l-20 p-r-20">
 				<span class="cont-tl-sp">确认测试信息
@@ -86,43 +40,44 @@
 				<!--通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。-->
 				<div class="o-hidden p-30 bb-1">
 					<label for="" class="col-sm-1 out-label p-l-30">选择服务</label>
-					<div class="col-sm-8 p-0">
-						<div class="di-block choice-service-box tac active">
-							<p class="m-t-20">基础版</p>
+					<div class="col-sm-8 p-0 notoggle-one-active">
+						<div class="di-block choice-service-box tac for_active active">
+							<p class="service-box-title">基础版</p>
 							<p class="m-b-5"><span class="larger-f">20</span>人 <span class="center-textline"> | </span><span class="larger-f"> 1</span>天</p>
 							<p>2999元 / 次</p>
 						</div>
-						<div class="di-block choice-service-box tac">
-							<p class="m-t-20">基础版</p>
+						<div class="di-block choice-service-box tac for_active">
+							<p class="service-box-title">基础版</p>
 							<p class="m-b-5"><span class="larger-f">20</span>人 <span class="center-textline"> | </span><span class="larger-f"> 1</span>天</p>
 							<p>2999元 / 次</p>
 						</div>
-						<div class="di-block choice-service-box tac">
-							<p class="m-t-20">基础版</p>
+						<div class="di-block choice-service-box tac for_active">
+							<p class="service-box-title">基础版</p>
 							<p class="m-b-5"><span class="larger-f">20</span>人 <span class="center-textline"> | </span><span class="larger-f"> 1</span>天</p>
 							<p>2999元 / 次</p>
 						</div>
-						<div class="di-block choice-service-box tac">
-							<p class="m-t-20">基础版</p>
+						<div class="di-block choice-service-box tac for_active">
+							<p class="service-box-title">基础版</p>
 							<p class="m-b-5"><span class="larger-f">20</span>人 <span class="center-textline"> | </span><span class="larger-f"> 1</span>天</p>
 							<p>2999元 / 次</p>
 						</div>
-						<div class="di-block choice-service-box tac">
-							<p class="m-t-20">基础版</p>
+						<div class="di-block choice-service-box tac for_active">
+							<p class="service-box-title">基础版</p>
 							<p class="m-b-5"><span class="larger-f">20</span>人 <span class="center-textline"> | </span><span class="larger-f"> 1</span>天</p>
 							<p>2999元 / 次</p>
 						</div>
+						<span class="zr_alert-span error-span" id="err_service_ssid" style="">请选择服务类型</span>
 					</div>
 				</div>
 				<div class="o-hidden p-30 bb-1">
 					<label for="" class="col-sm-1 out-label p-l-30">需求描述</label>
 					<div class="col-sm-6 p-0">
-						<textarea class="form-control" rows="5" placeholder="是否有重点关注的功能点或模块？
+						<textarea class="form-control demand-text" rows="5" placeholder="是否有重点关注的功能点或模块？
 是否有尚未实现的功能？有哪些？
 是否涉及支付环境，是否能修改数据方便测试或报销？"></textarea>
 					</div>
 				</div>
-				<div class="o-hidden p-30 bb-1">
+				<div class="o-hidden p-30 bb-1 lxfs">
 					<label class="col-sm-1 out-label p-l-30">联系方式</label>
 					<form class="form-horizontal p-0 col-sm-10" style="margin-left: 0px;">
 					  <div class="form-group m-b-30">
@@ -130,61 +85,63 @@
 					    <div class="col-sm-5">
 					      <input type="text" class="form-control" id="inputName3" placeholder="请输入姓名">
 					      <span id="helpBlock" class="help-block m-b-0 fs6">请勿填写姓名缩写/汉语拼音，等明显无认证诚意昵称</span>
+					      <span class="zr_alert-span error-span" id="err_dev_name" style="">请输入您的姓名</span>
 					    </div>
 					  </div>
 					  <div class="form-group m-b-30">
 					    <label for="inputCo3" class=" col-sm-1 control-label w-auto">公司</label>
 					    <div class="col-sm-5">
 					      <input type="text" class="form-control" id="inputCo3" placeholder="请输入公司名">
+					      <span class="zr_alert-span error-span" id="err_dev_company" style="">请输入您的公司名称</span>
 					    </div>
 					  </div>
 					  <div class="form-group m-b-30">
 					    <label for="inputTel3" class=" col-sm-1 control-label w-auto">电话</label>
 					    <div class="col-sm-5">
 					      <input type="text" class="form-control" id="inputTel3"  placeholder="请输入电话号码">
+					      <span class="zr_alert-span error-span" id="err_dev_phone" style="">请输入联系电话</span>
 					    </div>
 					  </div>
 					  <div class="form-group m-b-30">
 					    <label for="inputEmail3" class="col-sm-1 control-label w-auto">邮箱</label>
 					    <div class="col-sm-5">
-					      <input type="email" class="form-control" id="inputEmail3"  placeholder="请输入邮箱">
+					      <input type="email" class="form-control error-border" id="inputEmail3"  placeholder="请输入邮箱">
+					      <span class="zr_alert-span error-span" id="err_dev_email" style="">请输入联系邮箱</span>
 					    </div>
 					  </div>
 					  <div class="form-group m-b-30">
 					    <label for="inputQq3" class="col-sm-1 control-label w-auto">QQ</label>
 					    <div class="col-sm-5">
 					      <input type="text" class="form-control" id="inputQq3"  placeholder="请输入QQ号">
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <div class="col-sm-offset-0 col-sm-10">
-					      <button type="submit" class="btn btn-default">Sign in</button>
+					      <span class="zr_alert-span error-span" id="err_dev_qq" style="">请输入您的QQ或微信</span>
 					    </div>
 					  </div>
 					</form>
 				</div>
 				<div class="o-hidden p-30 bb-1">
 					<label class="col-sm-1 out-label">其他（选填）</label>
-					<form class="form-horizontal p-30 col-sm-10 bg-fa" style="margin-left: 0px;">
+					<form class="form-horizontal col-sm-10 p-0" style="margin-left: 0px;">
 					  <div class="form-group m-b-20">
 					    <label for="inputName3" class="col-sm-2 control-label">优先挑选用过专家：</label>
 					    <div class="col-sm-10">
-					    		<div class="model-2 di-block m-r-15">
-							    <div class="checkbox">
-								    <input type="checkbox">
-								    <label></label>
-							    </div>
-					    		</div>
 					    		<div class="model-2 di-block m-r-30">
 							    <div class="checkbox" ischeck="true">
 								    <input type="checkbox" checked="checked">
 								    <label></label>
 							    </div>
 					    		</div>
-					    		<span class="tag label m-r-15 active">专家：非你不可<span data-role="remove"></span></span>
-							<span class="tag labe m-r-15">专家：大宝<span data-role="remove"></span></span>
-							<span class="tag label m-r-15">专家：大宝大黄大宝<span data-role="remove"></span></span>
-							<span class="tag label m-r-15">专家：大宝<span data-role="remove"></span></span>
+					    </div>
+					    <div class="expert-box toggle-one-active">
+					    		<p class="color9 expert-box-text">如果您选择的专家无法接单，我们将为您指派另一位合适您的测试专家。</p>
+					    		<span class="tag label m-r-15 for_active active">专家：非你不可<br>QQ :412315678<span data-role="remove"></span><span class="after-btn"></span></span>
+							<span class="tag labe m-r-15 for_active">专家：大宝<br>QQ:23467589098<span data-role="remove"></span><span class="after-btn"></span></span>
+							<span class="tag label m-r-15 for_active">专家：大宝大黄大宝<br>QQ:23467589098<span data-role="remove"></span><span class="after-btn"></span></span>
+							<span class="tag label m-r-15 for_active">专家：大宝<br>QQ:23467589098<span data-role="remove"></span><span class="after-btn"></span></span>
+							<div class="expert-right-control">
+								<a class="btn-up"><i class="icon iconfont">&#xe79f;</i></a>
+								<span class="num-of-page">1/3</span>
+								<a class="btn-down"><i class="icon iconfont">&#xe7a0;</i></a>
+							</div>
 					    </div>
 					  </div>
 					  <div class="form-group m-b-30">
@@ -250,94 +207,67 @@
 				</div>
 			</div>
 		</div>
-		<h3>步骤线图</h3>
-		<div class="commit_box_step p-30 tac">
-			<ul class="di-block o-hidden">
-				<li class="complete">
-					<span class="spanc span-name"><i class="icon iconfont font-check"></i></span>上传安装包
-				</li>
-				<li class="complete">
-                    <span class="span_line"></span>
-                    <span class="spanc span-name"><i class="icon iconfont font-check"></i></span>补充应用信息
-                </li>
-                <li class="complete">
-                    <span class="span_line"></span>
-                    <span class="span1 span-name">3</span>确认联系方式
-                </li>
-                <li class="float not-complete">
-                    <span class="span_lineccc"></span>
-                    <span class="span2 span-name">4</span>提测完成
-                </li>
-			</ul>
-		</div>
-		<div class="cont-box m-b-30 p-relative">
-			<div class="p-20 o-hidden">
-				<div class="checkup-head-left guiding1">
-					<div class="front-title">评级说明：</div>
-					<div class="pull-left">
-						<p class="color6">
-							<span class="important-span color3 imred">特别重要</span>
-							该缺陷必须马上修复，产品不能带有此类问题上线；
-						</p>
-						<p class="color6">
-							<span class="important-span color3 imyel">重要</span>
-							BUG需优先考虑，不影响版本发布情况下均需要被修复；
-						</p>
-						<p class="color6">
-							<span class="important-span color3 impur">一般</span>
-							BUG按正常进度排队即可，待前两级修复完后再修复；
-						</p>
-						<p class="color6">
-							<span class="important-span color3 imblu">不重要</span>
-							BUG微不足道，可选择有时间再修复或暂时不进行修复；
-						</p>
-						<p class="color6">
-							<span class="important-span color3 imgre">不是BUG</span>
-							由于测试人员对设计理解有误，BUG描述不清，或非本软件问题等因素造成。
-						</p>
-					</div>
-				</div>
-				<div class="checkup-head-right">
-					<div class="user-pic-area">
-						<img src="demoimg/userheadpic.jpg" class="img-circle">
-					</div>
-					<div class="user-info-area">
-						<p><span class="info-front-text">专家：</span><span class="info-blue-text">老胡</span></p>
-						<p><span class="info-front-text">电话：</span><span class="info-blue-text">18588798378</span></p>
-						<p><span class="info-front-text">Q Q：</span><span class="info-blue-text">41236617</span></p>
-						<p><span class="info-front-text">邮箱：</span><span class="info-blue-text">laohu@testin.cn</span></p>
-					</div>
-				</div>
-			</div>
-			<div class="guide1-area guide-area">
-				<img src="demoimg/guide1.png">
-				<a class="guide1-btn">
-					<img src="demoimg/guide1btn.png">
-				</a>
-			</div>
-		</div>
-		<div class="content-box-bottom">
-			<div class="di-block">
-				<p class="select-bug">请选择BUG的重要程度 ：</p>
-			</div>
-			<div class="di-block p-t-10 p-l-10">
-				<div class="btn-group" role="group" aria-label="...">
-				  <button type="button" class="btn btn-default active">特别重要</button>
-				  <button type="button" class="btn btn-default">重要</button>
-				  <button type="button" class="btn btn-default">一般</button>
-				  <button type="button" class="btn btn-default">不重要</button>
-				  <button type="button" class="btn btn-default">不是BUG</button>
-				</div>
-			</div>
+		<div class="zr_special-box">
+		    <div class="zr_list-box">
+		        <ul class="zr_list list-top">
+		            <li class="float" style="width: 25%;">选择的服务</li>
+		            <li class="float">所需配额</li>
+		            <li class="float">可用配额</li>
+		            <li class="float">需购买配额</li>
+		            <li class="float">您的余额</li>
+		            <li class="float">订单金额</li>
+		        </ul>
+		        <ul class="zr_list list-bot">
+		            <li class="float page-service-name" style="width: 25%;">BUG探索（3人）-应用</li>
+		            <li class="float page-need-quota">1</li>
+		            <li class="float page-used-quota">0</li>
+		            <li class="float page-pay-quota">1</li>
+		            <li class="float">0.00</li>
+		            <li class="float"><span class="large-orange page-order-price">799.00元</span></li>
+		        </ul>
+		    </div>
+		    <div class="zr_right-btn-box" style="position: relative;">
+		        <span id="btn_submit">
+		        <a class="zr_orange-btn" href="javascript:void(0);" onclick="hideError()">提交测试</a></span>
+		        <span id="loading_submit" style="display:none; position: absolute;right: 85px;top: 32px;"><img src="/public/images/loading.gif"></span>
+		    </div>
 		</div>
 	</body>
 	<script>
     $(".checkbox").click(function(){
         if($(this).attr("isCheck") == "true") {
             $(this).removeAttr("isCheck");
+            $(".expert-box").hide()
         } else {
             $(this).attr("isCheck", "true");
+            $(".expert-box").show()
         }
     });
     </script>
+    <script>
+			$(function(){
+//				switch按钮
+			    $(".checkbox").click(function(){
+			        if($(this).attr("isCheck") == "true") {
+			            $(this).removeAttr("isCheck");
+			            $(".expert-box").hide()
+			        } else {
+			            $(this).attr("isCheck", "true");
+			            $(".expert-box").show()
+			        }
+			    });
+//				唯一切换事件带自切换
+				$(".toggle-one-active .for_active").on("click",function(){
+					$(this).toggleClass("active").siblings(".for_active").removeClass("active");
+				})
+//				唯一切换事件
+				$(".notoggle-one-active .for_active").on("click",function(){
+					$(this).addClass("active").siblings(".for_active").removeClass("active");
+				})
+				
+				$(".tag .after-btn").click(function(){
+					$(this).parents(".tag").hide()
+				})
+			});
+		</script>
 </html>
